@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>LCPD2012</h1>
-<p>online/p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCPD2012's Page</title>
+    <style>
+      #seconds {
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      var sec = 0
+      function counter() {
+        sec++;
+        document.querySelector("span#seconds").innerHTML = sec;
+      }
+      setInterval(counter, 1000);
+    </script>
+  </head>
+  <body>
+    <h1>LCPD2012's Page</h1>
+    <p>Hello World!</p>
+    <p>Your have viewed my site for <span id="seconds"></span> seconds !<p>
+  </body>
 </html>
